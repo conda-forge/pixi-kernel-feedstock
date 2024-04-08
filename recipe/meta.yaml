@@ -18,12 +18,10 @@ requirements:
   host:
     - python >=3.8,<4.0
     - setuptools
-    - poetry-core
     - pip
   run:
     - python >=3.8,<4.0
     - ipykernel >=6,<7
-    - jupyter_client >=8,<9
     - msgspec >=0.18,<1
 
 test:
