@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - python >=3.8,<4.0
-    - setuptools
+    - hatchling
     - pip
   run:
     - python >=3.8,<4.0
-    - ipykernel >=6,<7
-    - msgspec >=0.18,<1
+    - jupyter_client >=7
+    - msgspec >=0.18
 
 test:
   imports:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/renan-r-santos/pixi-kernel
-  summary: Python Jupyter kernel using Pixi for reproducible notebooks
+  summary: Jupyter kernel using Pixi for reproducible notebooks
   license: MIT
   license_file: LICENSE
 
