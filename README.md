@@ -7,7 +7,7 @@ Home: https://github.com/renan-r-santos/pixi-kernel
 
 Package license: MIT
 
-Summary: Jupyter kernel using Pixi for reproducible notebooks
+Summary: Jupyter kernels using Pixi for reproducible notebooks
 
 Current build status
 ====================

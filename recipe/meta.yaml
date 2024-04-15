@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/renan-r-santos/pixi-kernel
-  summary: Jupyter kernel using Pixi for reproducible notebooks
+  summary: Jupyter kernels using Pixi for reproducible notebooks
   license: MIT
   license_file: LICENSE
 
