@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<4.0
+    - ipykernel >=6
     - jupyter_client >=7
     - msgspec >=0.18
 
