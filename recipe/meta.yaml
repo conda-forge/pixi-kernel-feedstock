@@ -1,5 +1,5 @@
 {% set name = "pixi-kernel" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1f15ba525a51d216470a1207470bd12279e8e262b10e82a9f70e92bed9f73c01
+  sha256: 7fad1983bf4b76f3a8b8a8f62f9f734e040f1ba520eaedd73c70acbe4650fa7e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<4.0
+    - ipykernel >=6
     - jupyter_client >=7
     - msgspec >=0.18
 
