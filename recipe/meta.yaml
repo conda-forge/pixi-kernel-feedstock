@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.9,<4.0
     - jupyter_client >=7
-    - msgspec >=0.18
+    - pydantic >=2,<3
 
 test:
   imports:
