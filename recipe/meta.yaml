@@ -19,11 +19,15 @@ requirements:
   host:
     - python {{ python_min }}
     - hatchling
+    - jupyterlab >=4,<5
     - pip
   run:
     - python >={{ python_min }}
+    - ipykernel >=6
     - jupyter_client >=7
+    - jupyter_server >=2.4.0,<3
     - pydantic >=2,<3
+    - returns >=0.23,<0.24
 
 test:
   imports:
