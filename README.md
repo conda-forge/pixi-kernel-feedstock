@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@renan-r-santos](https://github.com/renan-r-santos/)
 
-
-<!-- dummy commit to enable rerendering -->
-

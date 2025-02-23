@@ -1,5 +1,5 @@
 {% set name = "pixi-kernel" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pixi_kernel-{{ version }}.tar.gz
-  sha256: 993a741af866f4ad581adb6fc3ae3451f6087493b480dae943a02ff4d1fab93a
+  sha256: 2792fc4644a997b1608598524aa53f86918cbe0fc2661d74044adaed5a90cdd6
 
 build:
   noarch: python
