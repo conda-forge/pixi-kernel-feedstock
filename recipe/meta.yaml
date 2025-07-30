@@ -1,5 +1,5 @@
 {% set name = "pixi-kernel" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pixi_kernel-{{ version }}.tar.gz
-  sha256: 7a66293f54a73cee6b352c4ebf380bda707eafe5b9dbef481909c05909b044d1
+  sha256: 4ee12b9d28b638fa7e1f5a1101a64846a3d3eab256adb70b9830121052d78eb1
 
 build:
   noarch: python
@@ -27,9 +27,10 @@ requirements:
     - python >={{ python_min }}
     - ipykernel >=6
     - jupyter_client >=7
-    - jupyter_server >=2.4.0,<3
-    - pydantic >=2,<3
-    - returns >=0.23,<0.24
+    - jupyter_server >=2.4
+    - msgspec >=0.18
+    - returns >=0.23
+    - tomli >=2
 
 test:
   imports:
