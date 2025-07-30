@@ -1,6 +1,5 @@
 {% set name = "pixi-kernel" %}
 {% set version = "0.6.5 %}
-{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -17,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.9,<4.0
     - hatchling
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
     - nodejs
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=3.9,<4.0
     - ipykernel >=6
     - jupyter_client >=7
     - jupyter_server >=2.4
@@ -38,7 +37,7 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }}
+    - python >=3.9,<4.0
     - pip
 
 about:
